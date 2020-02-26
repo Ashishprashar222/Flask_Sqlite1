@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <td>NAME</td>
+    <td>ADDRESS</td>
+    <td>CIty</td>
+    <td>Pincode</td>
+    </thead>
+
+    {% for row in rows %}
+    <tr>
+        <td>{{row['name']}}</td>
+        <td>{{row['addr']}}</td>
+        <td>{{row['City']}}</td>
+        <td>{{row['pin']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/">Go Back to home Page</a>
+</body>
+</html>
